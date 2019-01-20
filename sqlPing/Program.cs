@@ -25,6 +25,7 @@ namespace sqlPing
                     config.AddEnvironmentVariables();
                     config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
                 })
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .UseIISIntegration();
     }
 }
